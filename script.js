@@ -25,7 +25,7 @@ const wishes = {
 };
 
 /* 🧪 TEST MODE */
-const TEST_MODE = false;
+const TEST_MODE = true;
 const TEST_DAY = 15;
 
 /* 📅 DATE LOGIC */
