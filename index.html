@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>March Love Vault 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 💖 FLOATING HEARTS -->
+<div class="hearts"></div>
+
+<!-- 🔐 LOCKED CONTENT -->
+<div id="lockedContent" class="card">
+  <h2>💝 March Love Vault</h2>
+  <p>Enter today’s password</p>
+  <input type="text" id="passwordInput" placeholder="e.g. BADAK3">
+  <button onclick="unlockContent()">Unlock 💌</button>
+  <p id="errorMessage" class="error"></p>
+  <p id="countdownDisplay" class="countdown"></p>
+</div>
+
+<!-- 🔓 UNLOCKED CONTENT -->
+<div id="unlockedContent" class="card hidden">
+  <div id="dayBadge" class="badge"></div>
+
+  <!-- ✨ NAME ANIMATION -->
+  <h1 class="glow-name">Tanaya 💖</h1>
+
+  <p id="messageText" class="message"></p>
+  <button onclick="lockContent()">Lock 🔒</button>
+</div>
+
+<!-- 🎆 FIREWORKS -->
+<canvas id="fireworks"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>

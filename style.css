@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  width: 90%;
+  max-width: 360px;
+  text-align: center;
+  margin: auto;
+  margin-top: 15vh;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 2;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  background: #ff5f7e;
+  color: white;
+  font-size: 16px;
+}
+
+.error {
+  color: crimson;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.badge {
+  background: #ff5f7e;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.message {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+/* ✨ NAME GLOW */
+.glow-name {
+  font-size: 32px;
+  color: #ff4f79;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #ff7eb3; }
+  to   { text-shadow: 0 0 25px #ff1e56; }
+}
+
+/* 💖 FLOATING HEARTS */
+.hearts span {
+  position: fixed;
+  bottom: -20px;
+  font-size: 20px;
+  animation: float 8s linear infinite;
+  color: rgba(255, 0, 100, 0.6);
+}
+
+@keyframes float {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-110vh) scale(1.5); opacity: 0; }
+}
+
+/* 🎆 FIREWORKS */
+#fireworks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  pointer-events: none;
+  z-index: 5;
+}
